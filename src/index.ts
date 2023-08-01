@@ -30,7 +30,7 @@ const createWindow = (): void => {
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   // Hanlde file rename from old path to new path
   ipcMain.handle("renameFile", async (event, oldPath, newPath) => {
