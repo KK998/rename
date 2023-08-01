@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useCallback, useId } from "react"
 
 type ModalProps = {
@@ -8,6 +9,7 @@ const Modal = ({ children, content }: ModalProps) => {
     const id = useId();
 
     const handleModalOpen = useCallback(() => {
+        // @ts-ignore
         window[id].showModal();
     }, [id])
 

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { app, BrowserWindow, ipcMain, dialog } from 'electron';
 import fs from "fs";
 import util from "util";
@@ -40,6 +41,7 @@ const createWindow = (): void => {
 
   // Handle dialog requests from the renderer process
   ipcMain.handle("dialog", async (event, method, params) => {
+    // @ts-ignore
     return await dialog[method](params);
   });
 
