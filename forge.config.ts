@@ -23,8 +23,7 @@ const config: ForgeConfig = {
         repository: {
           owner: 'kk998',
           name: 'rename',
-        },
-        prerelease: true,
+        }
       }
     }
   ],
